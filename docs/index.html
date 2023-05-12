@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>apple.in</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- google materials icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body class=" capitalize scroll-smooth min-h-screen ">
+  <!-- header section start here -->
+      <header class="bg-applenav fixed top-0 left-0 right-0 z-10">
+        <div class="container mx-auto  py-3 lg:px-4 xl:px-10 ">
+          <div class="flex flex-row justify-between">
+              <div class="w-1/2 lg:w-6"><a href="https://www.apple.com/">
+                <img src="./img/apple-img/applelogo.png" alt="" class="w-8 py-3"></a>
+              </div>
+
+            <nav class="  hidden lg:block lg:w-74 ">
+              <ul class="text-xl flex flex-row justify-between   gap-5">
+               
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="store">store</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="mac">mac</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="ipad">ipad</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext"data-filter="iphone">iphone</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="watch">watch</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="airpod">airpod</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="tv">tv&home</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="entertainment">entertainment</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="accessories">accessories</a></li>
+                <li><a href="#" class="filter-btn text-base text-appletext" data-filter="support">support</a></li>
+                
+              </ul>
+            </nav>
+
+            <div class="right-icon-logo  flex flex-row justify-end gap-5 w-1/2 lg:w-20  ">
+              <div class="filter-search p-3  " ><i class=" fa-solid fa-magnifying-glass text-2xl text-appletext  "></i></div>
+              <div class="filter-cart p-3 " ><i class=" fa-solid fa-cart-shopping text-2xl text-appletext "></i></div>
+              <div class="filter-menu p-3 lg:hidden"><i class="fa-solid fa-grip-lines text-2xl text-appletext"></i></div>
+            </div>
+         </div>
+            
+            <div class=" navlists grid grid-cols-3 ">
+              <!-- FIRST COLS -->
+                    <ul class="flex flex-col gap-3  ">
+                      <!-- heading  -->
+                      <li class="navlist store text-slate-400 font-medium ">shop</li>
+                      <li class="navlist mac text-slate-400 font-medium">explore mac</li>
+                      <li class="navlist ipad  text-slate-400 font-medium">explore ipad</li>
+                      <li class="navlist iphone text-slate-400 font-medium">explore iphone</li>
+                      <li class="navlist watch text-slate-400 font-medium">explore watch</li>
+                      <li class="navlist airpod text-slate-400 font-medium">explore airpod</li>
+                      <li class="navlist tv text-slate-400 font-medium">explore tv & home</li>
+                      <li class="navlist entertainment text-slate-400 font-medium">explore entertainment</li>
+                      <li class="navlist accessories text-slate-400 font-medium">shop accessories</li>
+                      <li class="navlist support text-slate-400 font-medium">explore support</li>
+                      
+                       <!-- sublist -->
+                      <li class="navlist store text-white text-3xl font-bold ">shop the latest</li>
+                      <li class="navlist store text-white text-3xl font-bold ">mac</li>
+                      <li class="navlist store text-white text-3xl font-bold ">ipad</li>
+                      <li class="navlist store text-white text-3xl font-bold ">iphone</li>
+                      <li class="navlist store text-white text-3xl font-bold ">apple watch</li>
+                      <li class="navlist store text-white text-3xl font-bold ">accessories</li>
+                      <li class="navlist mac text-white text-3xl font-bold ">explore all mac</li>
+                      <li class="navlist mac text-white text-3xl font-bold ">macbook air</li>
+                      <li class="navlist mac text-white text-3xl font-bold ">mackbook pro</li>
+                      <li class="navlist mac text-white text-3xl font-bold ">imac</li>
+                      <li class="navlist mac text-white text-3xl font-bold ">mac mini</li>
+                      <li class=" navlist mac text-white text-3xl font-bold ">mac studio</li>
+                      <li class=" navlist mac text-white text-3xl font-bold ">mac pro</li>
+                      <li class="navlist mac text-white text-3xl font-bold ">displays</li>
+                      <li class="navlist ipad text-white text-3xl font-bold ">explore all ipad</li>
+                      <li class="navlist ipad text-white text-3xl font-bold ">ipad air</li>
+                      <li class="navlist ipad text-white text-3xl font-bold ">ipad pro</li>
+                      <li class="navlist ipad text-white text-3xl font-bold ">ipad</li>
+                      <li class="navlist ipad text-white text-3xl font-bold ">ipad mini</li>
+                      <li class="navlist ipad text-white text-3xl font-bold ">apple pencil</li>
+                      <li class="navlist ipad text-white text-3xl font-bold ">keyboards</li>
+                      <li class="navlist ipad text-white text-3xl font-bold ">displays</li>
+                      <li class="navlist iphone text-white text-3xl font-bold ">explore all iphone</li>
+                      <li class="navlist iphone text-white text-3xl font-bold ">iphone 14 pro</li>
+                      <li class="navlist iphone text-white text-3xl font-bold ">iphone 14</li>
+                      <li class="navlist iphone text-white text-3xl font-bold ">iphone 13 pro</li>
+                      <li class="navlist iphone text-white text-3xl font-bold ">iphone 13</li>
+                      <li class="navlist iphone text-white text-3xl font-bold ">iphone 13 mini</li>
+                      <li class="navlist iphone text-white text-3xl font-bold ">iphone 12</li>
+                      <li class="navlist iphone text-white text-3xl font-bold ">iphone se</li>
+                     
+                      <li class="navlist watch text-white text-3xl font-bold ">explore all watch</li>
+                      <li class="navlist watch text-white text-3xl font-bold ">apple watch ultra</li>
+                      <li class="navlist watch text-white text-3xl font-bold ">apple watch series 18</li>
+                      <li class="navlist watch text-white text-3xl font-bold ">apple watch se</li>
+                      <li class="navlist watch text-white text-3xl font-bold ">apple watch nike</li>
+                      <li class="navlist watch text-white text-3xl font-bold ">apple watch hermes</li>
+                   
+                      <li class="navlist airpod text-white text-3xl font-bold ">explore all airpod</li>
+                      <li class="navlist airpod text-white  text-3xl font-bold ">airpod 2nd generation</li>
+                      <li class="navlist airpod text-white  text-3xl font-bold ">airpod 3rd generation</li>
+                      <li class="navlist airpod text-white  text-3xl font-bold ">airpod pro 2nd generation</li>
+                      <li class="navlist airpod text-white  text-3xl font-bold ">airpod max</li>
+                     
+                      <li class="navlist tv text-white text-3xl font-bold ">explore tv & home</li>
+                      <li class="navlist tv text-white text-3xl font-bold ">apple tv 4k</li>
+                      <li class="navlist tv text-white text-3xl font-bold ">homepod</li>
+                      <li class="navlist tv text-white text-3xl font-bold ">homepod mini</li>
+                  
+                      <li class="navlist entertainment text-white text-3xl font-bold ">explore entertainment</li>
+                      <li class="navlist entertainment text-white text-3xl font-bold ">apple one</li>
+                      <li class="navlist entertainment text-white text-3xl font-bold ">apple music/li>
+                      <li class="navlist entertainment text-white text-3xl font-bold ">apple arcade</li>
+                      <li class="navlist entertainment text-white text-3xl font-bold">apple fitness+</li>
+                      <li class="navlist entertainment text-white text-3xl font-bold ">apple news+</li>
+                      <li class="navlist entertainment text-white text-3xl font-bold ">apple podcasts</li>
+                      <li class="navlist entertainment text-white text-3xl font-bold ">apple books</li>
+                      <li class="navlist entertainment text-white text-3xl font-bold ">apple store</li>
+                  
+                      <li class="navlist accessories text-white text-3xl font-bold ">shop all accesssories</li>
+                      <li class="navlist accessories text-white text-3xl font-bold ">mac</li>
+                      <li class="navlist accessories text-white text-3xl font-bold ">ipad</li>
+                      <li class="navlist accessories text-white text-3xl font-bold ">iphone</li>
+                      <li class="navlist accessories text-white text-3xl font-bold">apple watch</li>
+                      <li class="navlist accessories text-white text-3xl font-bold ">airpod</li>
+                      <li class="navlist accessories text-white text-3xl font-bold ">tv & home</li>
+                   
+                      <li class="navlist support text-white text-3xl font-bold ">iphone</li>
+                      <li class="navlist support text-white  text-3xl font-bold ">mac</li>
+                      <li class="navlist support text-white  text-3xl font-bold ">ipad</li>
+                      <li class="navlist support text-white  text-3xl font-bold ">iphone</li>
+                      <li class="navlist support text-white  text-3xl font-bold ">apple watch</li>
+                      <li class="navlist support text-white  text-3xl font-bold ">airpod</li>
+                      <li class="navlist support text-white  text-3xl font-bold ">tv</li>
+                      <!-- meduim list -->
+
+                      <li class=" navlist mac text-white text-sm font-medium ">compare mac</li>
+                      <li class=" navlist mac text-white text-sm font-medium ">mac does that</li>
+
+                      <li class="navlist ipad text-white text-sm font-medium ">compare ipad</li>
+                      <li class="navlist ipad text-white text-sm font-medium ">why ipad</li>
+
+                      <li class="navlist iphone text-white text-sm font-medium ">compare iphone</li>
+                      <li class="navlist iphone text-white text-sm font-medium ">switch to iphone</li>
+
+                      <li class="navlist watch text-white text-sm font-medium ">compare watch</li>
+                      <li class="navlist watch text-white text-sm font-medium ">why apple watch</li>
+
+                      <li class="navlist airpod text-white  text-sm font-medium ">compare watch</li>
+
+                      <li class="navlist support text-white  text-sm font-medium">explore support</li>
+
+                  
+                    </ul>
+                  
+                <!-- SECOND COLS -->
+                    <ul class="flex flex-col gap-2  ">
+                          <!-- heading  -->
+                          <li class="navlist store text-slate-400 font-medium">quicks links</li>
+                          <li class="navlist mac text-slate-400 font-medium">shop mac</li>
+                          <li class="navlist ipad text-slate-400 font-medium">shop ipad</li>
+                          <li class="navlist iphone text-slate-400 font-medium">shop iphone</li>
+                          <li class="navlist watch text-slate-400 font-medium">shop watch</li>
+                          <li class="navlist airpod text-slate-400 font-medium">shop airpods</li>
+                          <li class="navlist tv text-slate-400 font-medium">shop tv and home</li>
+                          <li class="navlist entertainment text-slate-400 font-medium" >support</li>
+                          <li class="navlist accessories text-slate-400 font-medium" >explore accessories</li>
+                          <li class="navlist support text-slate-400 font-medium">get help</li>
+                       <!-- sublist -->
+                       <li class="navlist store text-white text-xl font-medium">find a shop</li>
+                      <li class="navlist store text-white text-xl font-medium">order status</li>
+                      <li class="navlist store text-white text-xl font-medium">apple trade in</li>
+                      <li class="navlist store text-white text-xl font-medium">financing</li>
+                      <li class="navlist mac text-white text-xl font-medium">shop mac</li>
+                      <li class="navlist mac text-white text-xl font-medium">mac accesorries</li>
+                      <li class="navlist mac text-white text-xl font-medium">apple trade in</li>
+                      <li class="navlist mac text-white text-xl font-medium">financing</li>
+                   
+                      <li class="navlist ipad text-white text-xl font-medium">shop ipad</li>
+                      <li class="navlist ipad text-white text-xl font-medium">ipad accesorries</li>
+                      <li class="navlist ipad text-white text-xl font-medium">apple trade in</li>
+                      <li class="navlist ipad text-white text-xl font-medium">financing</li>
+                     
+                      <li class="navlist iphone text-white text-xl font-medium">shop iphone</li>
+                      <li class="navlist iphone text-white text-xl font-medium">ipad accesorries</li>
+                      <li class="navlist iphone text-white text-xl font-medium">apple trade in</li>
+                      <li class="navlist iphone text-white text-xl font-medium">financing</li>
+                      
+                      <li class="navlist watch text-white text-xl font-medium">shop watch</li>
+                      <li class="navlist watch text-white text-xl font-medium">apple watch studio</li>
+                      <li class="navlist watch text-white text-xl font-medium">apple watch bands</li>
+                      <li class="navlist watch text-white text-xl font-medium">apple watch accessories</li>
+                      <li class="navlist watch text-white text-xl font-medium">apple trade in</li>
+                      <li class="navlist watch text-white text-xl font-medium">financing</li>
+                   
+                      <li class="navlist airpod text-white  text-xl font-medium">shop airpods</li>
+                      <li class="navlist airpod text-white  text-xl font-medium">airpods accessories</li>
+                      
+                      <li class="navlist tv text-white text-xl font-medium">shop apple tv 4k</li>
+                      <li class="navlist tv text-white text-xl font-medium">shop home pod</li>
+                      <li class="navlist tv text-white text-xl font-medium">shop home pod mini</li>
+                      <li class="navlist tv text-white text-xl font-medium">shop siri remote</li>
+                      <li class="navlist tv text-white text-xl font-medium">tv home accessories</li>
+                      
+                      <li class="navlist entertainment text-white text-xl font-medium">apple tv+ support</li>
+                      <li class="navlist entertainment text-white text-xl font-medium">apple music support </li>
+                 
+                      <li class="navlist accessories text-white text-xl font-medium">made by apple</li>
+                      <li class="navlist accessories text-white text-xl font-medium">beast by dr.dre </li>
+                      <li class="navlist accessories text-white text-xl font-medium">airtag</li>
+                     
+                      <li class="navlist support text-white  text-xl font-medium">community</li>
+                      <li class="navlist support text-white  text-xl font-medium">check coverage</li>
+                      <li class="navlist support text-white  text-xl font-medium">repair</li>
+                      <li class="navlist support text-white  text-xl font-medium">contact us</li>
+                    </ul>
+                
+                  <!-- THIRD COLS -->
+                        <ul class="flex flex-col  gap-2 ">
+                          <!-- heading -->
+                          <li class="navlist store text-slate-400 font-medium" >shop special stores</li>
+                          <li class="navlist mac text-slate-400 font-medium" >more from mac</li>
+                          <li class="navlist ipad text-slate-400 font-medium" >more from ipad</li>
+                          <li class="navlist iphone text-slate-400 font-medium" >more from iphone</li>
+                          <li class="navlist watch text-slate-400 font-medium" >more from watch</li>
+                          <li class="navlist airpod text-slate-400 font-medium" >more from airpods</li>
+                          <li class="navlist tv text-slate-400 font-medium" >more from tv &home/li>
+                            <li class="navlist support text-slate-400 font-medium" >helpful topics</li>
+                           <!-- sublist -->
+                          <li class="navlist store text-white text-xl font-medium">certified refurbished</li>
+                          <li class="navlist store text-white text-xl font-medium">education</li>
+                          <li class="navlist store text-white text-xl font-medium">business</li>
+                          <li class="navlist store text-white text-xl font-medium">verterans and military</li>
+                          <li class="navlist store text-white text-xl font-medium">government</li>
+                          <li class="navlist mac text-white text-xl font-medium">mac support</li>
+                          <li class="navlist mac text-white text-xl font-medium">macOs ventura</li>
+                          <li class="navlist mac text-white text-xl font-medium">final cut pro</li>
+                          <li class="navlist mac text-white text-xl font-medium">logic pro</li>
+                          <li class="navlist mac text-white text-xl font-medium">continuity</li>
+                          <li class="navlist mac text-white text-xl font-medium">icloud</li>
+                          <li class="navlist mac text-white text-xl font-medium">mac business</li>
+                          <li class="navlist mac text-white text-xl font-medium">education</li>
+                         
+                          <li class="navlist ipad text-white text-xl font-medium">ipad support</li>
+                          <li class="navlist ipad text-white text-xl font-medium">final cut pro for ipad</li>
+                          <li class="navlist ipad text-white text-xl font-medium">logic pro for ipad</li>
+                          <li class="navlist ipad text-white text-xl font-medium">continuity</li>
+                          <li class="navlist ipad text-white text-xl font-medium">icloud</li>
+                          <li class="navlist ipad text-white text-xl font-medium">education</li>
+          
+                          <li class="navlist iphone text-white text-xl font-medium">iphone support</li>
+                          <li class="navlist iphone text-white text-xl font-medium">ios 16</li>
+                          <li class="navlist iphone text-white text-xl font-medium">iphone privacy</li>
+                          <li class="navlist iphone text-white text-xl font-medium">icloud</li>
+                          <li class="navlist iphone text-white text-xl font-medium">wallet ,pay,card</li>
+                          <li class="navlist iphone text-white text-xl font-medium">siri</li>
+                         
+                          <li class="navlist watch text-white text-xl font-medium">apple watch support</li>
+                          <li class="navlist watch text-white text-xl font-medium">watch os 9</li>
+                          <li class="navlist watch text-white text-xl font-medium">apple fitness+</li>
+                         
+                          <li class="navlist airpod text-white  text-xl font-medium">airpods  support</li>
+                          <li class="navlist airpod text-white  text-xl font-medium">apple music </li>
+                         
+                            <li class="navlist tv text-white text-xl font-medium">tv&home  support</li>
+                            <li class="navlist tv text-white text-xl font-medium">apple tv app </li>
+                            <li class="navlist tv text-white text-xl font-medium">apple tv+ </li>
+                            <li class="navlist tv text-white text-xl font-medium">hpme app </li>
+                            <li class="navlist tv text-white text-xl font-medium">apple music </li>
+                            <li class="navlist tv text-white text-xl font-medium">siri </li>
+                            <li class="navlist tv text-white text-xl font-medium">airplay </li>
+                            
+                            <li class="navlist support text-white  text-xl font-medium">get applecare+</li>
+                            <li class="navlist support text-white  text-xl font-medium">apple id & password </li>
+                            <li class="navlist support text-white  text-xl font-medium">billing and subscription</li>
+                            <li class="navlist support text-white  text-xl font-medium">find my</li>
+                            <li class="navlist support text-white  text-xl font-medium">accessibility</li>
+
+                          </ul>
+                   
+            </div>
+           
+                     
+
+                          <!-- search section -->
+              <div class="search-mobile-list origin-top animate-openmenu hidden">
+                <ul class="flex flex-col gap-5 py-6">
+                  <li class="pt-6"><div class="absolute "><i class='fa-solid fa-magnifying-glass text-applenav text-2xl m-3  '></i></div><input class="rounded-lg p-4  placeholder:px-7 placeholder:text-lg" type="search" placeholder="search apple.com"></li>
+                  <li class=" text-slate-400 font-medium">quicks link</li>
+                  <li class=" text-white text-xl font-medium"><i class="fa-solid fa-arrow-right "></i> find a store</li>
+                  <li class=" text-white text-xl font-medium"><i class="fa-solid fa-arrow-right "></i> airpods</li>
+                  <li class=" text-white text-xl font-medium"><i class="fa-solid fa-arrow-right "></i> airtag</li>
+                  <li class=" text-white text-xl font-medium"><i class="fa-solid fa-arrow-right "></i> apple care+</li>
+                  <li class=" text-white text-xl font-medium"><i class="fa-solid fa-arrow-right"></i> apple trade in</li>
+                </ul>
+              </div>
+
+              <!-- cart section -->
+                        
+              <div class="cart-mobile-list origin-top animate-openmenu hidden">
+                  <ul class="flex flex-col gap-5 py-6">
+                  <li class=" text-white text-3xl font-bold pt-6">your bag is empty</li>
+                  <li class=" text-slate-400 font-medium"><a class="text-blue-800" href="#"> sign in</a>to see if you have saved items</li>
+                  <li class=" text-white text-xl font-medium"><i class="fa-sharp fa-light fa-box"></i> orders</li>
+                  <li class=" text-white text-xl font-medium "><i class="fa-solid fa-bookmark "></i>  your saves</li>
+                  <li class=" text-white text-xl font-medium"><i class="fa-regular fa-file-invoice "></i> account</li>
+                  <li class=" text-white text-xl font-medium"><i class="fa-solid fa-user "></i> sign in</li>
+                  </ul>
+              </div>
+
+
+            <!-- menu mobile list -->
+            <div class="menu-mobile-list origin-top animate-openmenu hidden ">
+              <i class="close-menu fa-solid fa-x absolute p-2  top-5 right-0 text-appletext text-2xl   "></i>
+                <ul class="flex flex-col gap-5 py-6">
+                  <li><a class="text-appletext text-lg " href="#">store</a></li>
+                  <li><a class="text-appletext text-lg" href="#">mac</a></li>
+                  <li><a class="text-appletext text-lg" href="#">ipad</a></li>
+                  <li><a class="text-appletext text-lg" href="#">iphone</a></li>
+                  <li><a class="text-appletext text-lg" href="#">watch</a></li>
+                  <li><a class="text-appletext text-lg" href="#">airpods</a></li>
+                  <li><a class="text-appletext text-lg" href="#">tv & home</a></li>
+                  <li><a class="text-appletext text-lg" href="#">entertainment</a></li>
+                  <li><a class="text-appletext text-lg" href="#">accessories</a></li>
+                  <li><a class="text-appletext text-lg" href="#">support</a></li>
+                </ul>
+
+            </div>
+      </div>  
+      </header>
+        <!-- header section ends here -->
+
+      <main class=" pt-24   ">
+           <!-- secondary nav section -->
+        <section class="px-4 left-0 right-0 bg-slate-400 origin-top animate-openmenu">
+            <h3 class="text-center m-auto  py-4 lg:py-10 text-applenav text-sm sm:text-base">Get $200_$630 in credit toward iPhone 14 or iPhone 14 Pro when you trade in iPhone 11 or higher.1 <a class="text-blue-800 hover:underline" href="#">Shop iPhone</a> <i class="fa-solid fa-angle-right"></i></h3>
+
+        </section>
+        <!-- secondary nav section ends -->
+        <section class="flex flex-col gap-3 my-4">
+           <!-- first main image -->
+           <div class="relative">
+              <ul>
+                <li class="h-[40vh] md:h-[80vh]">
+                  <img class="w-full  h-full object-cover hidden  lg:block" src="./img/main-img/main-img-1.jpg" alt="">
+                  <img class="w-full h-full object-cover block lg:hidden" src="./img/mobile-img/main-img-mobile-1.jpg" alt="">
+                </li>
+              </ul>
+              <div class="absolute inset-0  flex flex-col w-full">
+                <div class="mx-auto  flex flex-col  items-center mt-1 md:mt-7 lg:mt-10 lg:gap-2 xl:mt-20">
+                  <h3 class="text-white  font-extrabold text-xl md:text-3xl  lg:text-6xl  ">iphone 14 pro</h3>
+                  <h3 class="text-white text-lg md:text-xl lg:text-3xl"> pro beyond</h3>
+                  <div class="flex flex-row text-blue-800 text-center text-lg ">
+                  <a href="#" class="text-sm">learn more <i class="fa-solid fa-angle-right"></i></a>
+                  <a href="#" class="text-sm">buy <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+              </div>
+
+  
+              </div>
+           </div>
+           <!-- second main image -->
+           <div class="relative">
+            <ul>
+              <li class="h-[40vh] md:h-[80vh]">
+                <img class="w-full  h-full object-cover hidden  lg:block" src="./img/main-img/main-img-2.jpg" alt="">
+                <img class="w-full h-full object-cover block lg:hidden" src="./img/mobile-img/mobile-main-img-2.jpg" alt="">
+              </li>
+            </ul>
+            <div class="absolute inset-0  flex flex-col w-full">
+              <div class="mx-auto  flex flex-col  items-center mt-1 md:mt-7 lg:mt-10 lg:gap-2 xl:mt-16">
+                <h3 class="text-applenav  font-extrabold text-xl md:text-3xl  lg:text-6xl  ">iphone 14</h3>
+                <h3 class="text-applenav text-lg md:text-xl lg:text-3xl">  wonderful</h3>
+                <div class="flex flex-row text-blue-800 text-center text-lg ">
+                <a href="#" class="text-sm">learn more <i class="fa-solid fa-angle-right"></i></a>
+                <a href="#" class="text-sm">buy <i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+
+
+            </div>
+          
+         </div>
+
+         <!-- third main image -->
+         <div class="relative">
+          <ul>
+            <li class="h-[40vh] md:h-[80vh]">
+              <img class="w-full  h-full object-cover hidden  lg:block" src="./img/main-img/main-img-3.jpg" alt="">
+              <img class="w-full h-full object-cover block lg:hidden" src="./img/mobile-img/apple-img-3.jpg" alt="">
+            </li>
+          </ul>
+          <div class="absolute inset-0  flex flex-col w-full">
+            <div class="mx-auto  flex flex-col  items-center mt-1 md:mt-7 lg:mt-10 lg:gap-3 xl:mt-20">
+              <h3 class="text-applenav  font-extrabold text-xl md:text-3xl  lg:text-6xl  ">gift judt waiting to be picked</h3>
+              <h3 class="text-applenav text-center text-lg md:text-xl lg:text-3xl">  its not tpp late to get mom something great</h3>
+              <div class="flex flex-row text-blue-800 text-center text-lg ">
+              <a href="#" class="text-sm">learn more <i class="fa-solid fa-angle-right"></i></a>
+              <a href="#" class="text-sm">buy <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+          </div>
+
+
+          </div>
+       </div>
+
+       
+          <!-- <div class="image-1 relative  ">
+            <img class="w-screen  scale-y-200 hidden  lg:block" src="./img/main-img/main-img-1.jpg" alt="">
+            <img class="w-screen scale-y-100 lg:hidden" src="./img/mobile-img/main-img-mobile-1.jpg" alt="">
+            <div class="flex flex-col justify-center items-center absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/4 lg:top-2 xl:top-0 sm:gap-3 ">
+                <h3 class="text-white font-extrabold sm:text-3xl  lg:text-6xl  ">iphone 14 pro</h3>
+                <h3 class="text-white sm:text-lg "> pro beyond</h3>
+                <div class="flex flex-row text-blue-800">
+                  <a href="#">learn more <i class="fa-solid fa-angle-right"></i></a>
+                <a href="#">buy <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+          </div> -->
+      
+
+
+          <!-- image-2 -->
+          
+          <!-- <div class="image-2 relative lg:my-96 ">
+            <img class="w-screen scale-y-200 hidden  lg:block" src="./img/main-img/main-img-2.jpg" alt="">
+            <img class="w-screen scale-y-100 lg:hidden" src="./img/mobile-img/mobile-main-img-2.jpg" alt="">
+            <div class="flex flex-col justify-center items-center absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/4 lg:top-2 xl:top-0 sm:gap-3 ">
+                <h3 class="text-applenav font-bold sm:text-3xl  lg:text-6xl  ">iphone 14 </h3>
+                <h3 class="text-applenav sm:text-lg "> wonderful </h3>
+                <div class="flex flex-row text-blue-800">
+                  <a href="#">learn more <i class="fa-solid fa-angle-right"></i></a>
+                <a href="#">buy <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+          </div> -->
+       
+          <!-- image-3 -->
+         
+          <!-- <div class="image-3 relative ">
+            <img class="w-screen scale-y-200 hidden  lg:block" src="./img/main-img/main-img-3.jpg" alt="">
+            <img class="w-screen scale-y-100 lg:hidden" src="./img/mobile-img/apple-img-3.jpg" alt="">
+            <div class="flex flex-col justify-center items-center absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/4 lg:top-2 xl:top-0 sm:gap-3 ">
+                <h3 class="text-applenav font-extrabold sm:text-3xl  lg:text-4xl  ">gift just waiting to be picked </h3>
+                <h3 class="text-applenav sm:text-lg font-medium "> its not tpp late to get mom something great</h3>
+                <div class="flex flex-row text-blue-800">
+                  <a href="#">learn more <i class="fa-solid fa-angle-right"></i></a>
+                <a href="#">buy <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+          </div> -->
+        
+
+        </section>
+
+        <!-- GRID SECTION START HERE -->
+
+      <section class="  ">
+        <div class="img-wrapper  gap-4 grid  grid-cols-1 lg:grid-cols-2 ">
+          <!-- first img -->
+          <div class="relative">
+            <img class="w-screen" src="./img/grid-img/apple-grid-1.jpg" alt="">
+            <div class="absolute left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-full opacity-70 flex flex-col justify-center items-center xl:gap-3  top-1/4 md:top-1/3  lg:top-1/4 ">
+              <div class="flex flex-row justify-center items-center">
+                <img class="w-4 sm:w-8" src="./img/apple-img/applelogo.png" alt= "apple">
+              <h2 class=" font-bold text-black   text-sm/[17px] lg:text-2xl"> trade in</h2>
+              </div>
+              <h2 class=" font-medium text-applenav  text-sm/[17px] md:text-lg ">upgrade and save its that easy</h2>
+              <h2 class=" font-medium opacity-80 text-white text-xs sm:text-base"><a class="text-blue-600" href="#">see what your device is worth <i class="fa-solid fa-angle-right"></i></a> </h2>
+            </div>
+          </div>
+          <!-- second img -->
+          <div class="relative">
+            <img class="w-screen" src="./img/grid-img/apple-grid-6.jpg" alt="">
+            <div class="absolute left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-full opacity-75 flex flex-col justify-center items-center xl:gap-3 top-1/4 md:top-1/3  lg:top-1/4 ">
+              <div class="flex flex-row justify-center items-center">
+                <img class="w-4 sm:w-8" src="./img/apple-img/applelogo.png" alt= "apple">
+              <h2 class=" font-bold text-black text-sm  lg:text-2xl"> card</h2>
+              </div>
+              <h2 class=" font-medium text-applenav  text-xs sm:text-lg ">get up to 3% daily cash back with every purchase</h2>
+              <h2 class=" font-medium opacity-80 text-white text-xs sm:text-base"><a class="text-blue-600" href="#">learn more<i class="fa-solid fa-angle-right"></i></a> <a class="text-blue-600 ml-4" href="#">apply now<i class="fa-solid fa-angle-right "></i></a>  </h2>
+            </div>
+          </div>
+          <!-- Third img -->
+          <div class="relative">
+            <img class="w-screen" src="./img/grid-img/apple-grid-2.jpg" alt="">
+            <div class="absolute left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-full opacity-75 flex flex-col justify-center items-center xl:gap-3 top-1/4 md:top-1/3  lg:top-1/4  ">
+              <img class="w-16 sm:w-20 md:w-40" src="./img/apple-img/hero_logo_apple_watch_series_8__ezarmmoobhg2_large.png" alt="">
+              <h2 class=" font-medium text-white opacity-80 text-xs sm:text-lg ">a healthy leap ahead</h2>
+              <h2 class="  opacity-80 text-xs sm:text-base"><a class="text-blue-600" href="#">learn more<i class="fa-solid fa-angle-right"></i></a> <a class="text-blue-600 ml-4" href="#">buy<i class="fa-solid fa-angle-right "></i></a>  </h2>
+            </div>
+          </div>
+
+          <!-- fouth img -->
+          <div class="relative">
+            <img class="w-screen" src="./img/grid-img/apple-grid-5.jpg" alt="">
+            <div class="absolute left-1/2  -bottom-5  -translate-x-1/2 -translate-y-1/2 text-center w-full opacity-75 flex flex-col justify-center items-center lg:gap-3   ">
+              <div class="flex flex-row">
+              <h2 class=" font-bold text-white text-sm  lg:text-2xl">WWWDC23</h2>
+              </div>
+              <h2 class=" font-medium opacity-80 text-white text-xs sm:text-lg ">Apple worldwide developers conference <br> join us online june 5-9.</h2>
+              <h2 class=" font-medium opacity-80 text-white text-xs sm:text-base"><a class="text-blue-800" href="#">learn more<i class="fa-solid fa-angle-right"></i></a>  </h2>
+            </div>
+          </div>
+          <!-- fivth image -->
+          <div class="relative">
+            <img class="w-screen" src="./img/grid-img/apple-grid-3.jpg" alt="">
+            <div class="absolute left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-full opacity-75 flex flex-col justify-center items-center xl:gap-3 top-1/4 md:top-1/3  lg:top-1/4  ">
+              <div class="flex flex-row justify-center items-center">
+                <img class="w-4 sm:w-8 opacity-90" src="./img/apple-img/applelogo.png" alt= "apple">
+              <h2 class=" font-bold text-black text-sm  lg:text-2xl"> ipad</h2>
+              </div>
+              <h2 class=" font-medium opacity-80 text-applenav  text-xs sm:text-lg ">lovable.drawable.magical</h2>
+              <h2 class=" font-medium opacity-80 text-white text-xs sm:text-base"><a class="text-blue-600" href="#">learn more<i class="fa-solid fa-angle-right"></i></a> <a class="text-blue-600 ml-4" href="#">buy<i class="fa-solid fa-angle-right "></i></a>  </h2>
+            </div>
+          </div>
+              <!-- sixth image -->
+          <div class="relative">
+            <img class="w-screen" src="./img/grid-img/apple-grid-4.jpg" alt="">
+            <div class="absolute left-1/2  -translate-x-1/2 -translate-y-1/2 text-center w-full opacity-75 flex flex-col justify-center items-center xl:gap-3 top-1/4 md:top-1/3  lg:top-1/4 ">
+           
+              <h2 class=" font-bold text-white text-sm  lg:text-2xl">macBook pro</h2>
+             
+              <h2 class=" font-medium opacity-80 text-white text-xs sm:text-lg ">supercharged by m2 pro and m2 max</h2>
+              <h2 class=" font-medium opacity-80 text-blue-700 text-xs sm:text-base"><a class="text-blue-600" href="#">learn more<i class="fa-solid fa-angle-right"></i></a> <a class="text-blue-600 ml-4" href="#">buy<i class="fa-solid fa-angle-right "></i></a>  </h2>
+            </div>
+          </div>
+        </div>
+   
+      </section>
+
+  <!-- slide show sstart here -->
+
+  <section class="pt-5 mb-24">
+    <div class="relative ">
+      <ul id="slider">
+        <li class="h-[40vh] md:h-[75vh]">
+          <img class="w-full h-full  sm:object-cover " src="./img/apple-img/980x551 (1).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full h-full sm:object-cover" src="./img/apple-img/980x551 (2).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full h-full  sm:object-cover" src="./img/apple-img/980x551 (3).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full  h-full sm:object-cover" src="./img/apple-img/980x551 (4).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full h-full   sm:object-cover" src="./img/apple-img/980x551 (5).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full  h-full sm:object-cover" src="./img/apple-img/980x551 (6).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full h-full sm:object-cover" src="./img/apple-img/980x551 (7).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full  h-full sm:object-cover" src="./img/apple-img/980x551 (8).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full h-full  sm:object-cover" src="./img/apple-img/980x551 (9).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full  h-full sm:object-cover" src="./img/apple-img/980x551 (10).jpg" alt="">
+        </li>
+        <li class="h-[40vh] md:h-[75vh] hidden">
+          <img class="w-full h-full sm:object-cover" src="./img/apple-img/980x551 (11).jpg" alt="">
+        </li>
+
+
+      </ul>
+      <div class="absolute top-0 left-0 w-full h-full flex  text-white">
+      <div class="border my-auto w-full h-full opacity-30 flex justify-between  ">
+        <button class="prev-btn h-full bg-white hover:bg-slate-800 focus:bg-slate-950v px-2 md:px-4"><i class="fa-solid fa-chevron-left  font-extrabold text-black hover:text-white text-sm sm:text-4xl md:text-8xl "></i></button>
+        <button class="nxt-btn h-full bg-white hover:bg-slate-800 focus:bg-slate-950 px-2 md:px-4"><i class="fa-solid fa-chevron-right  font-extrabold text-black hover:text-white text-sm sm:text-4xl md:text-8xl "></i></button>
+      </div>
+       
+      </div>
+    </div>
+  </section>
+
+      </main>
+  
+        
+
+  <!-- font awesome icon libaray -->
+  <script src="https://kit.fontawesome.com/72e1a8d80d.js" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script> 
+</body>
+</html>
