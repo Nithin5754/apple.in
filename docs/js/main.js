@@ -150,6 +150,23 @@ for(let i=0;i<totalSlides;i++){
 
 }
 
+let defaultplay=true;
+function autoplay(){
+
+ if(defaultplay===true){
+  next();
+  if(currentslide>=totalSlides){
+    currentslide=0;
+  }
+
+  setTimeout(()=>{
+    autoplay()
+  },3000)
+ }
+}
+
+// 
+
 
 const prevBtn=document.querySelector('.prev-btn');
 const nxtBtn=document.querySelector('.nxt-btn');
@@ -162,6 +179,115 @@ nxtBtn.addEventListener('click',()=>{
  
   next();
 })
+
+
+
+// play pause btn slide
+
+const playPauseEl=document.querySelector('.play-pause');
+// ul icon
+
+const playPauseMain=document.createElement('ul')
+playPauseMain.setAttribute('class','play-pause-main flex flex-row justify-end mr-4 relative')
+
+playPauseEl.appendChild(playPauseMain)
+
+
+// play icon
+const playSlide=document.createElement('li')
+playSlide.setAttribute('class','play-slide absolute p-1  rounded-full mt-2 ')
+
+playPauseMain.appendChild(playSlide)
+
+const playIcon=document.createElement('i')
+playIcon.setAttribute('class','fa-solid fa-play border-double border-4 border-applenav rounded-full p-1')
+playSlide.appendChild(playIcon)
+
+// pause icon
+
+const pauseSlide=document.createElement('li')
+pauseSlide.setAttribute('class','pause-slide absolute  p-1 rounded-full mt-2 hidden')
+
+playPauseMain.appendChild(pauseSlide)
+
+const pauseIcon=document.createElement('i')
+pauseIcon.setAttribute('class','fa-solid fa-pause border-double border-4 border-applenav rounded-full p-1')
+pauseSlide.appendChild(pauseIcon)
+
+playSlide.addEventListener('click',()=>{
+  defaultplay=true;
+  playSlide.setAttribute('class','play-slide absolute border-2 p-1 rounded-full mt-2 hidden');
+  pauseSlide.setAttribute('class','pause-slide absolute border-2 p-1 rounded-full mt-2 block');
+  // slide img two btn display none
+  slideBtns.style.display="none";
+
+  autoplay()
+  
+})
+
+pauseSlide.addEventListener('click',()=>{
+  pauseSlide.setAttribute('class','pause-slide absolute border-2 p-1 rounded-full mt-2 hidden');
+  playSlide.setAttribute('class','play-slide absolute border-2 p-1 rounded-full mt-2 block');
+  // slide img two btns display block
+  slideBtns.style.display="block";
+  defaultplay=false;
+  
+  
+})
+
+
+// slide two btn invisbile while autoplay
+
+const slideBtns=document.querySelector('.slide-btns')
+
+
+
+
+// footer list mobile and tab section action
+
+const footerlists=document.querySelectorAll('.footer-list')
+function getfooterlist(filter){
+    footerlists.forEach((footerlist)=>{
+      if(footerlist.classList.contains(filter)){
+        
+        footerlist.style.display='block'
+       
+      }else{
+        footerlist.style.display='none'
+      }
+    })
+}
+
+const defaultlist="";
+getfooterlist(defaultlist)
+
+const filterHeads=document.querySelectorAll('.footer-list-head')
+const footerWrapper=document.querySelector('.footer-list-wrapper')
+// close btn
+
+filterHeads.forEach((filterhead)=>{
+  filterhead.addEventListener('click',(e)=>{
+      let filter=e.target.dataset.filter;
+   
+      getfooterlist(filter)
+  })
+
+})
+
+const listWrappers=document.querySelectorAll('.list-wrapper')
+listWrappers.forEach((listwrapper)=>{
+  listwrapper.addEventListener('mouseleave',(e)=>{
+      let filter=e.target.dataset.filter;
+   
+      getfooterlist(defaultlist)
+  })
+
+})
+
+
+
+
+
 
 
 
